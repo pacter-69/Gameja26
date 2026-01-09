@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class SpotTracker : MonoBehaviour
 {
-    public List<GameObject> targets;
+    public List<GameObject> cars;
+    public List<(GameObject car, float distance)> bod;
+    public GameObject goal;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

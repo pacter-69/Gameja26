@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public int speed = 1, speedUp = 2;
     public int lane = 0;
-    public int position;
+    public int trackPosition;
     
     public InputActionReference upAction;
     public InputActionReference leftAction;

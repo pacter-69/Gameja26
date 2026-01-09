@@ -12,9 +12,6 @@ public class Scriptdeprueba : MonoBehaviour
     void Update()
     {
         
-
-
-
-
     }
+
 }

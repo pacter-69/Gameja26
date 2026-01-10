@@ -10,6 +10,7 @@ public class CalculateSpeed : MonoBehaviour
         void FixedUpdate()
         {
             speed = player.GetComponent<PlayerMovement>().speed;
-            speedText.text = (speed.ToString("F1") + " Km/h");
+            speed *= 10;
+            speedText.text = (speed.ToString("F0") + " Km/h");
         }
 }

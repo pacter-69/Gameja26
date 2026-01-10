@@ -3,13 +3,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 1, increaseSpeed = 1;
+    public float speed = 1, increaseSpeed = 1, boostSpeed = 1;
     public int lane = 0;
     public int trackPosition;
+    public bool canBoost = true, unboost = false;
+    public float boostTimer, cooldown;
     
     public InputActionReference upAction;
     public InputActionReference leftAction;
     public InputActionReference rightAction;
+    public InputActionReference boostAction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Movement();
+        Boost();
     }
 
     void Movement()
@@ -52,5 +56,24 @@ public class PlayerMovement : MonoBehaviour
     void ChangeLane()
     {
         gameObject.transform.position = new Vector2(LaneController.laneValues[lane], gameObject.transform.position.y);
+    }
+
+    void Boost()
+    {
+        if (boostAction.action.WasPressedThisFrame() && canBoost)
+        {
+            speed += boostSpeed;
+            canBoost = false;
+        }
+
+        if (!canBoost && !unboost)
+        {
+            boostTimer += Time.deltaTime;
+            if (boostTimer >= cooldown)
+            {
+                speed -= boostSpeed;
+                unboost = true;
+            }
+        }
     }
 }

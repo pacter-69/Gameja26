@@ -20,7 +20,7 @@ public class NPCmovement : MonoBehaviour
     [SerializeField] private bool hasCrashed;
     public bool playerLeft, playerRight;
     private float crashedTimer;
-    public GameObject carToCrashInto;
+    private GameObject carToCrashInto;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +30,11 @@ public class NPCmovement : MonoBehaviour
         laneTimer = 0;
         laneChangeCooldown = Random.Range(0.6f, 2f);
         acceleration = 1;
+    }
+
+    public void setCarToCrashInto(GameObject g)
+    {
+        carToCrashInto = g;
     }
 
     // Update is called once per frame
@@ -156,36 +161,6 @@ public class NPCmovement : MonoBehaviour
         {
             laneTimer = 0;
             InternalMoveLaneBy(whereToMove);
-        }
-    }
-    public void ForceMoveLaneBy(int whereToMove, GameObject carToCrash)
-    {
-        int laneCheck = CheckForLanes();
-        if (whereToMove == 2)
-        {
-            if (laneCheck == 0)
-            {
-                laneTimer = 0;
-                switch (Random.Range(0, 2))
-                {
-                    case 0:
-                        InternalMoveLaneBy(-1, carToCrash);
-                        break;
-                    case 1:
-                        InternalMoveLaneBy(1, carToCrash);
-                        break;
-                }
-            }
-            else if (laneCheck != -2)
-            {
-                laneTimer = 0;
-                InternalMoveLaneBy(laneCheck, carToCrash);
-            }
-        }
-        else
-        {
-            laneTimer = 0;
-            InternalMoveLaneBy(whereToMove, carToCrash);
         }
     }
 }

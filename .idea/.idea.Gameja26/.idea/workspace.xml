@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="49355800-fec1-4899-ba76-e9a8a231b049" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gameja26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gameja26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Accelerator 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Accelerator 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Deaccelerator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Deaccelerator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PauProba.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PauProba.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GoalBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GoalBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

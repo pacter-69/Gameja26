@@ -29,9 +29,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
-        if (speed < 10)
+        if (speed < 1)
         {
-            speed = 10;
+            speed = 1;
         }
         gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + speed * Time.deltaTime);
         

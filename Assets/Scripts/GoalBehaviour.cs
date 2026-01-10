@@ -5,6 +5,8 @@ public class GoalBehaviour : MonoBehaviour
 {
     public List<GameObject> cars = new List<GameObject>();
     private bool raceFinished = false;
+    public GameObject winPanel, losePanel;
+    public GameObject goalSergio;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,19 +22,24 @@ public class GoalBehaviour : MonoBehaviour
             if (root.CompareTag("Player") && !raceFinished)
             {
                 raceFinished = true;
+                goalSergio.SetActive(false);
 
                 int playerPosition = cars.IndexOf(root) + 1;
 
                 Debug.Log("Player finished at position: " + playerPosition);
-
+                
                 if (playerPosition == 2)
                 {
                     Debug.Log("WIN! Player finished 2nd!");
+                    winPanel.SetActive(true);
                 }
                 else
                 {
                     Debug.Log("LOSE! Player finished " + playerPosition + "th");
+                    losePanel.SetActive(true);
                 }
+                
+                root.GetComponent<PlayerMovement>().enabled = false;
             }
         }
     }

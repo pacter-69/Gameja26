@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class CameraTracker : MonoBehaviour
 {
-    public GameObject toTrack;
+    private GameObject toTrack;
     public float offset;
+    public GameObject[] player;
+
+    void Start()
+    {
+        toTrack = player[PlayerPrefs.GetInt("PlayerSprite")];
+    }
 
     void Update()
     {

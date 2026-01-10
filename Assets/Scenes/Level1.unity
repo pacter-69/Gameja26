@@ -3521,6 +3521,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
+      propertyPath: acelerar
+      value: 
+      objectReference: {fileID: 1581755107}
+    - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
       propertyPath: acceleratorValue
       value: 15
       objectReference: {fileID: 0}
@@ -3799,6 +3803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
+      propertyPath: frenar
+      value: 
+      objectReference: {fileID: 1581755107}
     - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
       propertyPath: deacceleratorValue
       value: -7
@@ -7684,6 +7692,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
+      propertyPath: acelerar
+      value: 
+      objectReference: {fileID: 1581755107}
+    - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
       propertyPath: acceleratorValue
       value: 15
       objectReference: {fileID: 0}
@@ -8642,6 +8654,10 @@ PrefabInstance:
       propertyPath: rightAction
       value: 
       objectReference: {fileID: 1706399437}
+    - target: {fileID: 8714663583674842184, guid: ba283df5a5e637b4e99f8deb10384500, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1581755107}
     - target: {fileID: 8965621926863935107, guid: ba283df5a5e637b4e99f8deb10384500, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16554,6 +16570,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
+      propertyPath: acelerar
+      value: 
+      objectReference: {fileID: 1581755107}
+    - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
       propertyPath: acceleratorValue
       value: 15
       objectReference: {fileID: 0}
@@ -18498,6 +18518,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
+      propertyPath: frenar
+      value: 
+      objectReference: {fileID: 1581755107}
     - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
       propertyPath: deacceleratorValue
       value: -7
@@ -123703,6 +123727,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
+      propertyPath: acelerar
+      value: 
+      objectReference: {fileID: 1581755107}
+    - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
       propertyPath: acceleratorValue
       value: 15
       objectReference: {fileID: 0}
@@ -127672,6 +127700,11 @@ GameObject:
 --- !u!4 &1581755106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8965621926863935107, guid: ba283df5a5e637b4e99f8deb10384500, type: 3}
+  m_PrefabInstance: {fileID: 278645839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1581755107 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2509101725392558350, guid: ba283df5a5e637b4e99f8deb10384500, type: 3}
   m_PrefabInstance: {fileID: 278645839}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1585799120 stripped
@@ -138197,6 +138230,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
+      propertyPath: frenar
+      value: 
+      objectReference: {fileID: 1581755107}
+    - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
       propertyPath: deacceleratorValue
       value: -7
       objectReference: {fileID: 0}
@@ -139258,6 +139295,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
+      propertyPath: frenar
+      value: 
+      objectReference: {fileID: 1581755107}
     - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
       propertyPath: deacceleratorValue
       value: -7
@@ -144510,6 +144551,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3942082649306182644, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
+      propertyPath: frenar
+      value: 
+      objectReference: {fileID: 1581755107}
     - target: {fileID: 4465980785983947933, guid: 5b73e7282245f25429ec99eb5b7152e0, type: 3}
       propertyPath: m_Name
       value: Deaccelerator
@@ -144571,6 +144616,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9070479422707316093, guid: 9a6c10e36fc6eef43980fe7a26a02122, type: 3}
+      propertyPath: acelerar
+      value: 
+      objectReference: {fileID: 1581755107}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

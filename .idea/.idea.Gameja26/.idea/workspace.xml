@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="49355800-fec1-4899-ba76-e9a8a231b049" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gameja26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gameja26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GoalSergio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GoalSergio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PauProba.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PauProba.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LinesCreditBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSetter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -104,6 +107,7 @@
       <workItem from="1768037061132" duration="2509000" />
       <workItem from="1768040485644" duration="51000" />
       <workItem from="1768040541431" duration="4040000" />
+      <workItem from="1768058519308" duration="2267000" />
     </task>
     <servers />
   </component>

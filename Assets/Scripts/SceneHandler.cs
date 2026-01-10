@@ -8,9 +8,9 @@ public class SceneHandler : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void StartGame()
+    public void LoadScene(string SceneName)
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(SceneName);
     }
     public void QuitGame()
     {

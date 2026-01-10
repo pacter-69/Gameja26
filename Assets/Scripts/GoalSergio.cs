@@ -31,6 +31,8 @@ public class GoalSergio : MonoBehaviour
         }
         distCars.Sort((a, b) => a.dist.CompareTo(b.dist));
         textUI.text = (distCars.FindIndex(a => a.car == playerCar)+1).ToString();
+        
+        
     }
 
     float GetDistance(GameObject a, GameObject b)

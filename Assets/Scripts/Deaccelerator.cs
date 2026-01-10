@@ -4,6 +4,7 @@ public class Deaccelerator : MonoBehaviour
 {
     public float deacceleratorMultiplicator;
     public int deacceleratorValue;
+    public Animator frenar;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,6 +19,7 @@ public class Deaccelerator : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            frenar.SetTrigger("FrenarTr");
             other.gameObject.GetComponent<PlayerMovement>().speed += deacceleratorValue * Time.deltaTime;
         }
     }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7648125836575728157}
   - component: {fileID: 1063436442905463873}
   - component: {fileID: 761071844431740937}
+  - component: {fileID: 2509101725392558350}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -230,3 +231,25 @@ MonoBehaviour:
   - {fileID: 7095036896258224715, guid: 01a4c3264dd8e494b8a10eb71abc3082, type: 3}
   - {fileID: 21300000, guid: 390bd002d2cbf224cbf4c08746bc272f, type: 3}
   - {fileID: -8012221784659206916, guid: db18fa60aacbe5945b1bdf76eabecf6d, type: 3}
+--- !u!95 &2509101725392558350
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314041361366115977}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5b1618df8c998e94993b98b2579dbca5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

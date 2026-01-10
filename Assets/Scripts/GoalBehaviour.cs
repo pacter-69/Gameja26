@@ -13,9 +13,12 @@ public class GoalBehaviour : MonoBehaviour
             cars.Add(other.gameObject);
         }
 
-        if (other.gameObject.CompareTag("Player") && cars[1].CompareTag("Player"))
+        if (cars.Count > 0)
         {
-            Debug.Log("WIN, player is second");
+            if (other.gameObject.CompareTag("Player") && cars[1].CompareTag("Player"))
+            {
+                Debug.Log("WIN, player is second");
+            }
         }
     }
 }

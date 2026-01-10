@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public int speed = 1, speedUp = 2;
+    public float speed = 1, increaseSpeed = 1;
     public int lane = 0;
     public int trackPosition;
     
@@ -25,15 +25,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
+        gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + speed * Time.deltaTime);
+        
         if (upAction.action.IsPressed())
         {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + speedUp * Time.deltaTime);
+            speed += increaseSpeed * Time.deltaTime;
         }
-        else
-        {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + speed * Time.deltaTime);
-        }
-
+        
         if (leftAction.action.WasPressedThisFrame())
         {
             if (LaneController.CanMove(-1, lane))

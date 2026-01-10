@@ -246,24 +246,26 @@ public class NPCDetectionBehaviour : MonoBehaviour
             if (other.transform.position.x >= GetComponentInParent<Transform>().position.x + 0.25)
             {
                 npcObject.GetComponent<NPCmovement>().playerRight = true;
+                npcObject.GetComponent<NPCmovement>().carToCrashInto = other.transform.gameObject;
+                
                 switch (currentTrackPlace)
                 {
                     case 0:
                         if (rnd1 <= 60)
                         {
-                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1, other.transform.gameObject);
                         }
                         break;
                     case 2:
                         if (rnd1 <= 50)
                         {
-                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1, other.transform.gameObject);
                         }
                         break;
                     case 3:
                         if (rnd1 <= 30)
                         {
-                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1, other.transform.gameObject);
                         }
                         break;
                 }
@@ -271,24 +273,26 @@ public class NPCDetectionBehaviour : MonoBehaviour
             if (other.transform.position.x <= GetComponentInParent<Transform>().position.x - 0.25)
             {
                 npcObject.GetComponent<NPCmovement>().playerLeft = true;
+                npcObject.GetComponent<NPCmovement>().carToCrashInto = other.transform.gameObject;
+                
                 switch (currentTrackPlace)
                 {
                     case 0:
                         if (rnd1 <= 60)
                         {
-                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1, other.transform.gameObject);
                         }
                         break;
                     case 2:
                         if (rnd1 <= 50)
                         {
-                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1, other.transform.gameObject);
                         }
                         break;
                     case 3:
                         if (rnd1 <= 30)
                         {
-                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1, other.transform.gameObject);
                         }
                         break;
                 }
@@ -301,7 +305,8 @@ public class NPCDetectionBehaviour : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (other.transform.position.x >= GetComponentInParent<Transform>().position.x + 0.25) npcObject.GetComponent<NPCmovement>().playerRight = false;
-            if (other.transform.position.x <= GetComponentInParent<Transform>().position.x - 0.25) npcObject.GetComponent<NPCmovement>().playerLeft = false;   
+            if (other.transform.position.x <= GetComponentInParent<Transform>().position.x - 0.25) npcObject.GetComponent<NPCmovement>().playerLeft = false;
+            npcObject.GetComponent<NPCmovement>().carToCrashInto = null;
         }
     }
 }

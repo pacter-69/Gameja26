@@ -3,7 +3,7 @@ using UnityEngine;
 public class NPCmovement : MonoBehaviour
 {
     [Header("Speed")]
-    public float currentSpeed = 0;
+    public float currentSpeed;
     public float acceleration;
     private float accelerationTimer;
     public float timeToChangeAcceleration;
@@ -20,12 +20,13 @@ public class NPCmovement : MonoBehaviour
     [SerializeField] private bool hasCrashed;
     public bool playerLeft, playerRight;
     private float crashedTimer;
+    public GameObject carToCrashInto;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentSpeed = Random.Range(11, 14);
-        MoveLaneBy(0);
+        InternalMoveLaneBy(0);
         laneTimer = 0;
         laneChangeCooldown = Random.Range(0.6f, 2f);
         acceleration = 1;
@@ -38,13 +39,13 @@ public class NPCmovement : MonoBehaviour
         switch (CheckForLanes())
         {
             case -1:
-                MoveLaneBy(-1);
+                InternalMoveLaneBy(-1);
                 break;
             case 1:
-                MoveLaneBy(1);
+                InternalMoveLaneBy(1);
                 break;
             case 0:
-                MoveLaneBy(Random.Range(-1, 2));
+                InternalMoveLaneBy(Random.Range(-1, 2));
                 break;
             case -2:
                 break;
@@ -69,6 +70,7 @@ public class NPCmovement : MonoBehaviour
             if (crashedTimer >= 1f)
             {
                 hasCrashed = false;
+                crashedTimer = 0f;
             }
         }
     }
@@ -87,24 +89,43 @@ public class NPCmovement : MonoBehaviour
         return -2; // This return means the cooldown hasn't ended yet
     }
 
-    public void MoveLaneBy(int whereToMove)
+    private void InternalMoveLaneBy(int whereToMove)
     {
         transform.position = new Vector3(LaneController.laneValues[currentLane + whereToMove], transform.position.y, transform.position.z);
         currentLane += whereToMove;
         laneTimer = 0;
     }
 
-    public void MoveLaneBy(int whereToMove, GameObject carToCrash)
+    private void InternalMoveLaneBy(int whereToMove, GameObject carToCrash)
     {
         if (whereToMove != -1 && playerLeft)
         {
+            Debug.LogWarning("Warning");
+            if (carToCrash.CompareTag("Car"))
+            {
+                carToCrash.GetComponent<NPCmovement>().MoveLaneBy(whereToMove);
+            }
             hasCrashed = true;
         }
-        if (whereToMove != 1 && playerRight)
+        else if (whereToMove != -1 && playerRight)
         {
+            Debug.LogWarning("Warning");
+            if (carToCrash.CompareTag("Car"))
+            {
+                carToCrash.GetComponent<NPCmovement>().MoveLaneBy(whereToMove);
+            }
             hasCrashed = true;
         }
-        MoveLaneBy(whereToMove);
+        else if(LaneController.CanMove(whereToMove, currentLane))
+        {
+            InternalMoveLaneBy(whereToMove);
+        }
+        
+    }
+
+    public void MoveLaneBy(int whereToMove)
+    {
+        InternalMoveLaneBy(whereToMove, carToCrashInto);
     }
 
     public void ForceMoveLaneBy(int whereToMove)
@@ -118,23 +139,23 @@ public class NPCmovement : MonoBehaviour
                 switch (Random.Range(0, 2))
                 {
                     case 0:
-                        MoveLaneBy(-1);
+                        InternalMoveLaneBy(-1);
                         break;
                     case 1:
-                        MoveLaneBy(1);
+                        InternalMoveLaneBy(1);
                         break;
                 }
             }
             else if (laneCheck != -2)
             {
                 laneTimer = 0;
-                MoveLaneBy(laneCheck);
+                InternalMoveLaneBy(laneCheck);
             }
         }
         else
         {
             laneTimer = 0;
-            MoveLaneBy(whereToMove);
+            InternalMoveLaneBy(whereToMove);
         }
     }
     public void ForceMoveLaneBy(int whereToMove, GameObject carToCrash)
@@ -148,23 +169,23 @@ public class NPCmovement : MonoBehaviour
                 switch (Random.Range(0, 2))
                 {
                     case 0:
-                        MoveLaneBy(-1, carToCrash);
+                        InternalMoveLaneBy(-1, carToCrash);
                         break;
                     case 1:
-                        MoveLaneBy(1, carToCrash);
+                        InternalMoveLaneBy(1, carToCrash);
                         break;
                 }
             }
             else if (laneCheck != -2)
             {
                 laneTimer = 0;
-                MoveLaneBy(laneCheck, carToCrash);
+                InternalMoveLaneBy(laneCheck, carToCrash);
             }
         }
         else
         {
             laneTimer = 0;
-            MoveLaneBy(whereToMove, carToCrash);
+            InternalMoveLaneBy(whereToMove, carToCrash);
         }
     }
 }

@@ -76,5 +76,34 @@ public class NPCmovement : MonoBehaviour
     {
         transform.position = new Vector3(LaneController.laneValues[currentLane + whereToMove], transform.position.y, transform.position.z);
         currentLane += whereToMove;
+        laneTimer = 0;
+    }
+
+    public void ForceMoveLaneBy(int whereToMove)
+    {
+        int laneCheck = CheckForLanes();
+        if (whereToMove == 2)
+        {
+            if (laneCheck == 0)
+            {
+                switch (Random.Range(0, 2))
+                {
+                    case 0:
+                        MoveLaneBy(-1);
+                        break;
+                    case 1:
+                        MoveLaneBy(1);
+                        break;
+                }
+            }
+            else if (laneCheck != -2)
+            {
+                MoveLaneBy(laneCheck);
+            }
+        }
+        else
+        {
+            MoveLaneBy(whereToMove);
+        }
     }
 }

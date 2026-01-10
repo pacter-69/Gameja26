@@ -12,6 +12,11 @@ public class SceneHandler : MonoBehaviour
     {
         SceneManager.LoadScene(SceneName);
     }
+
+    public void ResetPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
     public void QuitGame()
     {
         Application.Quit();

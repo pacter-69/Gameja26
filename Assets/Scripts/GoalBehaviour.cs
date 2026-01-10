@@ -31,7 +31,7 @@ public class GoalBehaviour : MonoBehaviour
                 
                 if (playerPosition == 2)
                 {
-                    Debug.Log("WIN! Player finished 2nd!");
+                    PlayerPrefs.SetInt("Win", PlayerPrefs.GetInt("Win") + 1);
                     winPanel.SetActive(true);
                 }
                 else

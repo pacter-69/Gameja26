@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf8affb68a49e2849aa96b9da4d90a0c
+guid: f2d62e4e7eceb8b4e9890aa5b6a10bb7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8454371598550265505
-    second: gasolina_0
+      213: -9182177788924653191
+    second: banana_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gasolina_0
+      name: banana_0
       rect:
         serializedVersion: 2
-        x: 251
-        y: 52
-        width: 1500
-        height: 1892
+        x: 0
+        y: 253
+        width: 1849
+        height: 1484
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ae6dbafc26f35570800000000000000
-      internalID: 8454371598550265505
+      spriteID: 9711aa243f9529080800000000000000
+      internalID: -9182177788924653191
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gasolina_0: 8454371598550265505
+      banana_0: -9182177788924653191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

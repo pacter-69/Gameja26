@@ -1,16 +1,15 @@
-using System;
 using UnityEngine;
 
-public class Accelerator : MonoBehaviour
+public class Deaccelerator : MonoBehaviour
 {
-    public float acceleratorMultiplicator;
-    public int acceleratorValue;
+    public float deacceleratorMultiplicator;
+    public int deacceleratorValue;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Car"))
         {
-            other.gameObject.GetComponent<NPCmovement>().acceleration = acceleratorMultiplicator;
+            other.gameObject.GetComponent<NPCmovement>().acceleration = deacceleratorMultiplicator;
             other.gameObject.GetComponent<NPCmovement>().timeToChangeAcceleration = 2f;
         }
     }
@@ -19,7 +18,7 @@ public class Accelerator : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerMovement>().speed += acceleratorValue * Time.deltaTime;
+            other.gameObject.GetComponent<PlayerMovement>().speed += deacceleratorValue * Time.deltaTime;
         }
     }
 }

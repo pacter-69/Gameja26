@@ -117,6 +117,7 @@ MonoBehaviour:
   unboost: 0
   boostTimer: 0
   cooldown: 0.5
+  boostSprite: {fileID: 0}
   upAction: {fileID: 0}
   leftAction: {fileID: 0}
   rightAction: {fileID: 0}
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   sprites:
-  - {fileID: -250119222720575664, guid: f03427e67c059d14eb971105d597f2e6, type: 3}
+  - {fileID: -6224906880762268770, guid: 75bca444721e63c458f03ee37fdd670d, type: 3}
   - {fileID: 7095036896258224715, guid: 01a4c3264dd8e494b8a10eb71abc3082, type: 3}
   - {fileID: 21300000, guid: 390bd002d2cbf224cbf4c08746bc272f, type: 3}
   - {fileID: -8012221784659206916, guid: db18fa60aacbe5945b1bdf76eabecf6d, type: 3}

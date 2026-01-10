@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f03427e67c059d14eb971105d597f2e6
+guid: 75bca444721e63c458f03ee37fdd670d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -250119222720575664
-    second: bebote_0
+      213: -6224906880762268770
+    second: bebe_si_final_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bebote_0
+      name: bebe_si_final_0
       rect:
         serializedVersion: 2
         x: 645
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0574e3264e5678cf0800000000000000
-      internalID: -250119222720575664
+      spriteID: e93b7444c20bc99a0800000000000000
+      internalID: -6224906880762268770
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bebote_0: -250119222720575664
+      bebe_si_final_0: -6224906880762268770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

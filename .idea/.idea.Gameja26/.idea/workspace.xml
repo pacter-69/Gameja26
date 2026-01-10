@@ -17,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LinesCreditBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuCars.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TrackProgressSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/setKnob.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,7 +107,7 @@
       <workItem from="1768040485644" duration="51000" />
       <workItem from="1768040541431" duration="4040000" />
       <workItem from="1768058519308" duration="3636000" />
-      <workItem from="1768064130335" duration="5033000" />
+      <workItem from="1768064130335" duration="7072000" />
     </task>
     <servers />
   </component>

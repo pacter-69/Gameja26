@@ -187,6 +187,9 @@ MonoBehaviour:
   currentLane: 2
   laneTimer: 0
   laneChangeCooldown: 0
+  hasCrashed: 0
+  playerLeft: 0
+  playerRight: 0
 --- !u!1001 &2617643257921780474
 PrefabInstance:
   m_ObjectHideFlags: 0

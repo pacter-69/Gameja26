@@ -89,7 +89,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Boost()
     {
-        
         if (boostAction.action.WasPressedThisFrame() && canBoost)
         {
             playerAnimator.SetBool("Accelerar", true);

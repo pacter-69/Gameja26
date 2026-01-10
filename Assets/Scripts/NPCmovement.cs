@@ -3,10 +3,11 @@ using UnityEngine;
 public class NPCmovement : MonoBehaviour
 {
     [Header("Speed")]
-    public int currentSpeed = 0;
+    public float currentSpeed = 0;
     const int maxSpeed = 20;
     public float acceleration;
     private float accelerationTimer;
+    public float timeToChangeAcceleration;
     
     [Header("Lane and track place")]
     public int trackPlace;
@@ -19,7 +20,7 @@ public class NPCmovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        currentSpeed = Random.Range(8, 12);
+        currentSpeed = Random.Range(11, 14);
         MoveLaneBy(0);
         laneTimer = 0;
         laneChangeCooldown = Random.Range(0.6f, 2f);
@@ -34,25 +35,26 @@ public class NPCmovement : MonoBehaviour
         {
             case -1:
                 MoveLaneBy(-1);
-                Debug.Log("A l'esquerra");
                 break;
             case 1:
                 MoveLaneBy(1);
-                Debug.Log("A la dreta");
                 break;
             case 0:
                 MoveLaneBy(Random.Range(-1, 2));
-                Debug.Log("Esquerra o dreta no se");
                 break;
             case -2:
                 break;
         }
-
+        
         accelerationTimer += Time.deltaTime;
-        if (accelerationTimer >= 1f)
+        if (accelerationTimer >= timeToChangeAcceleration)
         {
             acceleration = Random.Range(0.8f, 1.3f);
             accelerationTimer = 0;
+            if (timeToChangeAcceleration >= 1f)
+            {
+                timeToChangeAcceleration = 1f;
+            }
         }
     }
 
@@ -74,5 +76,34 @@ public class NPCmovement : MonoBehaviour
     {
         transform.position = new Vector3(LaneController.laneValues[currentLane + whereToMove], transform.position.y, transform.position.z);
         currentLane += whereToMove;
+        laneTimer = 0;
+    }
+
+    public void ForceMoveLaneBy(int whereToMove)
+    {
+        int laneCheck = CheckForLanes();
+        if (whereToMove == 2)
+        {
+            if (laneCheck == 0)
+            {
+                switch (Random.Range(0, 2))
+                {
+                    case 0:
+                        MoveLaneBy(-1);
+                        break;
+                    case 1:
+                        MoveLaneBy(1);
+                        break;
+                }
+            }
+            else if (laneCheck != -2)
+            {
+                MoveLaneBy(laneCheck);
+            }
+        }
+        else
+        {
+            MoveLaneBy(whereToMove);
+        }
     }
 }

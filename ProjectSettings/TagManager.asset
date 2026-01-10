@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Obstacle
   - Car
+  - Acc
+  - Deacc
+  - Llave
   layers:
   - Default
   - TransparentFX
@@ -40,6 +43,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tiles
+    uniqueID: 2467529503
+    locked: 0
+  - name: Bakchround
+    uniqueID: 4266175321
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -1,23 +1,45 @@
-using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class GoalBehaviour : MonoBehaviour
 {
-    public List<GameObject> cars;
+    public List<GameObject> cars = new List<GameObject>();
+    private bool raceFinished = false;
+    public GameObject winPanel, losePanel;
+    public GameObject goalSergio;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.gameObject.CompareTag("Player")) || (other.gameObject.CompareTag("Car")))
-        {
-            cars.Add(other.gameObject);
-        }
+        GameObject root = other.transform.root.gameObject;
 
-        if (cars.Count > 0)
+        if (root.CompareTag("Player") || root.CompareTag("Car"))
         {
-            if (other.gameObject.CompareTag("Player") && cars[1].CompareTag("Player"))
+            if (!cars.Contains(root))
             {
-                Debug.Log("WIN, player is second");
+                cars.Add(root);
+            }
+
+            if (root.CompareTag("Player") && !raceFinished)
+            {
+                raceFinished = true;
+                goalSergio.SetActive(false);
+
+                int playerPosition = cars.IndexOf(root) + 1;
+
+                Debug.Log("Player finished at position: " + playerPosition);
+                
+                if (playerPosition == 2)
+                {
+                    Debug.Log("WIN! Player finished 2nd!");
+                    winPanel.SetActive(true);
+                }
+                else
+                {
+                    Debug.Log("LOSE! Player finished " + playerPosition + "th");
+                    losePanel.SetActive(true);
+                }
+                
+                root.GetComponent<PlayerMovement>().enabled = false;
             }
         }
     }

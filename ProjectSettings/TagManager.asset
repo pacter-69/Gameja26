@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tiles
+    uniqueID: 2467529503
+    locked: 0
   - name: Bakchround
     uniqueID: 4266175321
     locked: 0

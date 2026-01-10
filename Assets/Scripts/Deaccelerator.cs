@@ -19,7 +19,7 @@ public class Deaccelerator : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            frenar.SetTrigger("FrenarTr");
+            frenar.SetBool("Frenar", true);
             other.gameObject.GetComponent<PlayerMovement>().speed += deacceleratorValue * Time.deltaTime;
         }
     }

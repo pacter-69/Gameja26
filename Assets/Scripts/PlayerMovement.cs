@@ -11,11 +11,14 @@ public class PlayerMovement : MonoBehaviour
     public bool canBoost = true, unboost = false;
     public float boostTimer, cooldown;
     public GameObject boostSprite;
+    public Animator playerAnimator;
     
     public InputActionReference upAction;
     public InputActionReference leftAction;
     public InputActionReference rightAction;
     public InputActionReference boostAction;
+
+    private float timerAnimation = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +31,25 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         Boost();
+        if (playerAnimator.GetBool("Frenar"))
+        {
+            timerAnimation += Time.deltaTime;
+            if (timerAnimation >= 1)
+            {
+                playerAnimator.SetBool("Frenar", false);
+                timerAnimation = 0;
+            }
+        }
+        if (playerAnimator.GetBool("Accelerar"))
+        {
+            timerAnimation += Time.deltaTime;
+            if (timerAnimation >= 1)
+            {
+                playerAnimator.SetBool("Accelerar", false);
+                timerAnimation = 0;
+            }
+        }
+        
     }
 
     void Movement()
@@ -67,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Boost()
     {
+        playerAnimator.SetBool("Accelerar", true);
         if (boostAction.action.WasPressedThisFrame() && canBoost)
         {
             speed += boostSpeed;

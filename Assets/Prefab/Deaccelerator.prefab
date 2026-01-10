@@ -107,6 +107,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   deacceleratorMultiplicator: 0.6
   deacceleratorValue: -7
+  frenar: {fileID: 0}
+  player:
+  - {fileID: 314041361366115977, guid: ca00bd57caa14bd4c84d6cc91730ddf7, type: 3}
+  - {fileID: 314041361366115977, guid: e4f3e613cfcd41947b191f1bae62c147, type: 3}
+  - {fileID: 314041361366115977, guid: f2a661663dcdb0b478408ee6a4d03db5, type: 3}
+  - {fileID: 314041361366115977, guid: 9812f50170489864f84a8c44319e73c4, type: 3}
 --- !u!61 &373023532122928678
 BoxCollider2D:
   m_ObjectHideFlags: 0

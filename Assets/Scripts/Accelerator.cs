@@ -6,6 +6,12 @@ public class Accelerator : MonoBehaviour
     public float acceleratorMultiplicator;
     public int acceleratorValue;
     public Animator acelerar;
+    public GameObject players;
+
+    void Start()
+    {
+        acelerar = players.transform.GetChild(PlayerPrefs.GetInt("PlayerSprite")).gameObject.GetComponent<Animator>();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Car"))

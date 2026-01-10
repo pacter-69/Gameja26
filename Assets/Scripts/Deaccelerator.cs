@@ -5,11 +5,11 @@ public class Deaccelerator : MonoBehaviour
     public float deacceleratorMultiplicator;
     public int deacceleratorValue;
     public Animator frenar;
-    public GameObject[] player;
+    public GameObject players;
 
     void Start()
     {
-        frenar = player[PlayerPrefs.GetInt("PlayerSprite")].GetComponent<Animator>();
+        frenar = players.transform.GetChild(PlayerPrefs.GetInt("PlayerSprite")).gameObject.GetComponent<Animator>();
     }
     
     private void OnTriggerEnter2D(Collider2D other)

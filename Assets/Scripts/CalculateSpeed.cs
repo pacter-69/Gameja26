@@ -17,7 +17,7 @@ public class CalculateSpeed : MonoBehaviour
     private float speed;
     private float anguloActual;
 
-    public ParticleSystem AnimeSpeed;
+    public GameObject AnimeSpeed;
 
     void FixedUpdate()
     {
@@ -42,11 +42,14 @@ public class CalculateSpeed : MonoBehaviour
         agujaVelocimetro.localEulerAngles = new Vector3(0, 0, anguloActual);
 
         // sale Animacion speed
-        Debug.Log(t);
-        if (t >= 0.1)
+        if (speed >= 200)
         {
-            AnimeSpeed.Play();
+            AnimeSpeed.SetActive(true);
             Debug.Log("mecago");
+        }
+        else
+        {
+            AnimeSpeed.SetActive(false);
         }
     }
 }

@@ -3367,6 +3367,10 @@ PrefabInstance:
       propertyPath: rightAction
       value: 
       objectReference: {fileID: 1706399437}
+    - target: {fileID: 8714663583674842184, guid: ba283df5a5e637b4e99f8deb10384500, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1581755100}
     - target: {fileID: 8965621926863935107, guid: ba283df5a5e637b4e99f8deb10384500, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

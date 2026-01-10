@@ -24,11 +24,13 @@ public class NPCDetectionBehaviour : MonoBehaviour
         // is equal to its placement in the race.
         //
         // This should always find an index as GoalSergio has a list with all the integrants of the race.
-        Debug.Log("Current Track Place: " + currentTrackPlace + ", " + transform.position.y);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //
+        //      OBSTACLE DETECTION
+        //
         int rnd1;
         if (other.transform.position.y >= GetComponentInParent<Transform>().position.y + 1 && (other.CompareTag("Acc") || other.CompareTag("Deacc")))
         {
@@ -38,7 +40,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(81))
+                        if (rnd1 <= 80)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(2);
                         }
@@ -48,7 +50,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(31))
+                        if (rnd1 <= 30)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(2);
                         }
@@ -56,7 +58,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     else if (other.CompareTag("Deacc"))
                     {
                         rnd1 = random.Next(101);
-                        if (rnd1 <= random.Next(31))
+                        if (rnd1 <= 30)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(2);
                         }
@@ -66,7 +68,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Deacc"))
                     {
-                        if (rnd1 <= random.Next(81))
+                        if (rnd1 <= 80)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(2);
                         }
@@ -97,7 +99,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(21))
+                        if (rnd1 <= 20)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
                         }
@@ -105,7 +107,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     else if (other.CompareTag("Deacc"))
                     {
                         rnd1 = random.Next(101);
-                        if (rnd1 <= random.Next(81))
+                        if (rnd1 <= 80)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
                         }
@@ -115,7 +117,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(31))
+                        if (rnd1 <= 30)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
                         }
@@ -123,7 +125,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     else if (other.CompareTag("Deacc"))
                     {
                         rnd1 = random.Next(101);
-                        if (rnd1 <= random.Next(31))
+                        if (rnd1 <= 30)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
                         }
@@ -133,7 +135,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(81))
+                        if (rnd1 <= 80)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
                         }
@@ -141,7 +143,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     else if (other.CompareTag("Deacc"))
                     {
                         rnd1 = random.Next(101);
-                        if (rnd1 <= random.Next(21))
+                        if (rnd1 <= 20)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
                         }
@@ -171,7 +173,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(21))
+                        if (rnd1 <= 20)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
                         }
@@ -179,7 +181,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     else if (other.CompareTag("Deacc"))
                     {
                         rnd1 = random.Next(101);
-                        if (rnd1 <= random.Next(81))
+                        if (rnd1 <= 80)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
                         }
@@ -189,7 +191,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(31))
+                        if (rnd1 <= 30)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
                         }
@@ -197,7 +199,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     else if (other.CompareTag("Deacc"))
                     {
                         rnd1 = random.Next(101);
-                        if (rnd1 <= random.Next(31))
+                        if (rnd1 <= 30)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
                         }
@@ -207,7 +209,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     rnd1 = random.Next(101);
                     if (other.CompareTag("Acc"))
                     {
-                        if (rnd1 <= random.Next(81))
+                        if (rnd1 <= 80)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
                         }
@@ -215,7 +217,7 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     else if (other.CompareTag("Deacc"))
                     {
                         rnd1 = random.Next(101);
-                        if (rnd1 <= random.Next(21))
+                        if (rnd1 <= 20)
                         {
                             npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
                         }
@@ -234,6 +236,72 @@ public class NPCDetectionBehaviour : MonoBehaviour
                     }
                     break;
             }
+        }
+        //
+        //      PLAYER DETECTION
+        //
+        if (other.CompareTag("Player"))
+        {
+            rnd1 = random.Next(101);
+            if (other.transform.position.x >= GetComponentInParent<Transform>().position.x + 0.25)
+            {
+                npcObject.GetComponent<NPCmovement>().playerRight = true;
+                switch (currentTrackPlace)
+                {
+                    case 0:
+                        if (rnd1 <= 60)
+                        {
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
+                        }
+                        break;
+                    case 2:
+                        if (rnd1 <= 50)
+                        {
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
+                        }
+                        break;
+                    case 3:
+                        if (rnd1 <= 30)
+                        {
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(1);
+                        }
+                        break;
+                }
+            }
+            if (other.transform.position.x <= GetComponentInParent<Transform>().position.x - 0.25)
+            {
+                npcObject.GetComponent<NPCmovement>().playerLeft = true;
+                switch (currentTrackPlace)
+                {
+                    case 0:
+                        if (rnd1 <= 60)
+                        {
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
+                        }
+                        break;
+                    case 2:
+                        if (rnd1 <= 50)
+                        {
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
+                        }
+                        break;
+                    case 3:
+                        if (rnd1 <= 30)
+                        {
+                            npcObject.GetComponent<NPCmovement>().ForceMoveLaneBy(-1);
+                        }
+                        break;
+                }
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (other.transform.position.x >= GetComponentInParent<Transform>().position.x + 0.25) npcObject.GetComponent<NPCmovement>().playerRight = false;
+            if (other.transform.position.x <= GetComponentInParent<Transform>().position.x - 0.25) npcObject.GetComponent<NPCmovement>().playerLeft = false;   
         }
     }
 }

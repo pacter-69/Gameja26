@@ -5090,7 +5090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7050102420851077003, guid: 406eec9ce6cf1ef4c9a6b1448674d2e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.9
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 7050102420851077003, guid: 406eec9ce6cf1ef4c9a6b1448674d2e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5363,7 +5363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7050102420851077003, guid: 406eec9ce6cf1ef4c9a6b1448674d2e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.9
+      value: -3.52
       objectReference: {fileID: 0}
     - target: {fileID: 7050102420851077003, guid: 406eec9ce6cf1ef4c9a6b1448674d2e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9527,7 +9527,7 @@ Transform:
   m_GameObject: {fileID: 1611129591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 95, z: 0}
+  m_LocalPosition: {x: 0, y: -3.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9620,7 +9620,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speedText: {fileID: 117137650}
   player: {fileID: 1611129591}
-  speed: 0
+  agujaVelocimetro: {fileID: 0}
+  velocidadMin: 10
+  velocidadMax: 250
+  anguloMin: 90
+  anguloMax: -90
 --- !u!1 &1612693355
 GameObject:
   m_ObjectHideFlags: 0
@@ -10779,7 +10783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7050102420851077003, guid: 406eec9ce6cf1ef4c9a6b1448674d2e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 68.7
+      value: -3.51
       objectReference: {fileID: 0}
     - target: {fileID: 7050102420851077003, guid: 406eec9ce6cf1ef4c9a6b1448674d2e2, type: 3}
       propertyPath: m_LocalPosition.z

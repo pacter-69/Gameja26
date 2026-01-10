@@ -17,6 +17,8 @@ public class CalculateSpeed : MonoBehaviour
     private float speed;
     private float anguloActual;
 
+    public ParticleSystem AnimeSpeed;
+
     void FixedUpdate()
     {
         // Obtener velocidad del jugador
@@ -38,5 +40,13 @@ public class CalculateSpeed : MonoBehaviour
 
         // Aplicar rotación (normalmente eje Z)
         agujaVelocimetro.localEulerAngles = new Vector3(0, 0, anguloActual);
+
+        // sale Animacion speed
+        Debug.Log(t);
+        if (t >= 0.1)
+        {
+            AnimeSpeed.Play();
+            Debug.Log("mecago");
+        }
     }
 }

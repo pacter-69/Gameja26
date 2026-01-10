@@ -4,7 +4,6 @@ public class NPCmovement : MonoBehaviour
 {
     [Header("Speed")]
     public float currentSpeed = 0;
-    const int maxSpeed = 20;
     public float acceleration;
     private float accelerationTimer;
     public float timeToChangeAcceleration;
@@ -16,7 +15,12 @@ public class NPCmovement : MonoBehaviour
     [Header("Lane debug and variables")]
     [SerializeField] private float laneTimer;
     public float laneChangeCooldown;
-    
+
+    [Header("Crash")]
+    [SerializeField] private bool hasCrashed;
+    public bool playerLeft, playerRight;
+    private float crashedTimer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +60,17 @@ public class NPCmovement : MonoBehaviour
                 timeToChangeAcceleration = 1f;
             }
         }
+
+        if (hasCrashed)
+        {
+            accelerationTimer = 0.8f;
+            accelerationTimer = 0;
+            crashedTimer += Time.deltaTime;
+            if (crashedTimer >= 1f)
+            {
+                hasCrashed = false;
+            }
+        }
     }
 
     public int CheckForLanes()
@@ -79,6 +94,19 @@ public class NPCmovement : MonoBehaviour
         laneTimer = 0;
     }
 
+    public void MoveLaneBy(int whereToMove, GameObject carToCrash)
+    {
+        if (whereToMove != -1 && playerLeft)
+        {
+            hasCrashed = true;
+        }
+        if (whereToMove != 1 && playerRight)
+        {
+            hasCrashed = true;
+        }
+        MoveLaneBy(whereToMove);
+    }
+
     public void ForceMoveLaneBy(int whereToMove)
     {
         int laneCheck = CheckForLanes();
@@ -86,6 +114,7 @@ public class NPCmovement : MonoBehaviour
         {
             if (laneCheck == 0)
             {
+                laneTimer = 0;
                 switch (Random.Range(0, 2))
                 {
                     case 0:
@@ -98,12 +127,44 @@ public class NPCmovement : MonoBehaviour
             }
             else if (laneCheck != -2)
             {
+                laneTimer = 0;
                 MoveLaneBy(laneCheck);
             }
         }
         else
         {
+            laneTimer = 0;
             MoveLaneBy(whereToMove);
+        }
+    }
+    public void ForceMoveLaneBy(int whereToMove, GameObject carToCrash)
+    {
+        int laneCheck = CheckForLanes();
+        if (whereToMove == 2)
+        {
+            if (laneCheck == 0)
+            {
+                laneTimer = 0;
+                switch (Random.Range(0, 2))
+                {
+                    case 0:
+                        MoveLaneBy(-1, carToCrash);
+                        break;
+                    case 1:
+                        MoveLaneBy(1, carToCrash);
+                        break;
+                }
+            }
+            else if (laneCheck != -2)
+            {
+                laneTimer = 0;
+                MoveLaneBy(laneCheck, carToCrash);
+            }
+        }
+        else
+        {
+            laneTimer = 0;
+            MoveLaneBy(whereToMove, carToCrash);
         }
     }
 }

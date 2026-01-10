@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49355800-fec1-4899-ba76-e9a8a231b049" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/NPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/NPC.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gameja26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gameja26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/NPC with detection.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/NPC with detection.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PauProba.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PauProba.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCDetectionBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCDetectionBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCmovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCmovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;PauBranch&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Aleixbrach&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,7 +53,9 @@
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\aldom\Documents\GitHub\Gameja26 -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\aldom\Documents\GitHub\Gameja26" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
@@ -58,10 +63,12 @@
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\aldom\Documents\GitHub\Gameja26 -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\aldom\Documents\GitHub\Gameja26" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -74,7 +81,7 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -105,6 +112,9 @@
       <workItem from="1768040485644" duration="51000" />
       <workItem from="1768040541431" duration="4040000" />
       <workItem from="1768058519308" duration="3636000" />
+      <workItem from="1768065141785" duration="12000" />
+      <workItem from="1768065180893" duration="28000" />
+      <workItem from="1768065217326" duration="6354000" />
     </task>
     <servers />
   </component>

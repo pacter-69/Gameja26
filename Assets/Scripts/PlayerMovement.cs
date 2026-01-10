@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public int trackPosition;
     public bool canBoost = true, unboost = false;
     public float boostTimer, cooldown;
+    public GameObject boostSprite;
     
     public InputActionReference upAction;
     public InputActionReference leftAction;
@@ -68,16 +71,29 @@ public class PlayerMovement : MonoBehaviour
         {
             speed += boostSpeed;
             canBoost = false;
+            boostTimer = 0;
+            boostSprite.GetComponent<RawImage>().color = new Color(1, 1, 1, 0.2f);
         }
-
         if (!canBoost && !unboost)
         {
             boostTimer += Time.deltaTime;
             if (boostTimer >= cooldown)
             {
+                boostTimer = 0;
                 speed -= boostSpeed;
                 unboost = true;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Llave"))
+        {
+            canBoost = true;
+            unboost = false;
+            Debug.Log("LLAVE");
+            boostSprite.GetComponent<RawImage>().color = new Color(1, 1, 1, 1f);
         }
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 49c5d8abb545ac142bc5aa28f6148963
+guid: 8157ca81e8f8c014a9551a8db845b991
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 719744682659851998
-    second: linea_de_salida_0
+      213: 3203770109958530429
+    second: llaveinglesa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: linea_de_salida_0
+      name: llaveinglesa_0
       rect:
         serializedVersion: 2
-        x: 306
-        y: 842
-        width: 1388
-        height: 316
+        x: 175
+        y: 259
+        width: 1710
+        height: 1548
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edeaaeab9fb0df900800000000000000
-      internalID: 719744682659851998
+      spriteID: d75a712d0f3167c20800000000000000
+      internalID: 3203770109958530429
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      linea_de_salida_0: 719744682659851998
+      llaveinglesa_0: 3203770109958530429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

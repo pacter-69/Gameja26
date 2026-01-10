@@ -35,6 +35,10 @@ public class GoalSergio : MonoBehaviour
 
     float GetDistance(GameObject a, GameObject b)
     {
+        if (a.transform.position.y >= b.transform.position.y)
+        {
+            return 0f;
+        }
         return Vector3.Distance (a.transform.position, b.transform.position);
     }
 }

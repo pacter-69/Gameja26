@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 136715805}
   m_Layer: 0
   m_Name: NPC (1)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   currentSpeed: 0
   acceleration: 0
+  timeToChangeAcceleration: 1
   trackPlace: 0
   currentLane: 1
   laneTimer: 0
@@ -214,7 +215,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -319,7 +320,7 @@ GameObject:
   - component: {fileID: 256959821}
   m_Layer: 0
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -381,7 +382,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -485,6 +486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   currentSpeed: 0
   acceleration: 0
+  timeToChangeAcceleration: 1
   trackPlace: 0
   currentLane: 0
   laneTimer: 0
@@ -793,7 +795,7 @@ GameObject:
   - component: {fileID: 519256620}
   m_Layer: 0
   m_Name: NPC (3)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -812,6 +814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   currentSpeed: 0
   acceleration: 0
+  timeToChangeAcceleration: 1
   trackPlace: 0
   currentLane: 3
   laneTimer: 0
@@ -873,7 +876,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1143,9 +1146,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 1
-  speedUp: 2
+  increaseSpeed: 1
   lane: 0
-  position: 0
+  trackPosition: 0
   upAction: {fileID: 0}
   leftAction: {fileID: 0}
   rightAction: {fileID: 0}
@@ -1400,7 +1403,7 @@ Transform:
   m_GameObject: {fileID: 1169830546}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6890759, w: 0.7246892}
-  m_LocalPosition: {x: -103.5, y: 64.3, z: 0}
+  m_LocalPosition: {x: -104.005, y: 64.234, z: 0}
   m_LocalScale: {x: 1470.4335, y: 200.41711, z: 15.2723}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1421,7 +1424,7 @@ GameObject:
   - component: {fileID: 1783232308}
   m_Layer: 0
   m_Name: NPC (2)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1440,6 +1443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   currentSpeed: 0
   acceleration: 0
+  timeToChangeAcceleration: 1
   trackPlace: 0
   currentLane: 2
   laneTimer: 0
@@ -1501,7 +1505,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1591,6 +1595,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3821724570510198576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 322819776886057074, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_Name
+      value: Accelerator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 27.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280670681882841916, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c920bb35a0af494e9feb0c7b99047bb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1605,3 +1666,4 @@ SceneRoots:
   - {fileID: 296975405}
   - {fileID: 489677263}
   - {fileID: 1169830548}
+  - {fileID: 3821724570510198576}

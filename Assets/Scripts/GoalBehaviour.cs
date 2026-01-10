@@ -14,6 +14,7 @@ public class GoalBehaviour : MonoBehaviour
 
         if (root.CompareTag("Player") || root.CompareTag("Car"))
         {
+            Debug.Log(root.name);
             if (!cars.Contains(root))
             {
                 cars.Add(root);

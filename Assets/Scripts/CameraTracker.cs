@@ -4,11 +4,11 @@ public class CameraTracker : MonoBehaviour
 {
     private GameObject toTrack;
     public float offset;
-    public GameObject[] player;
+    public GameObject players;
 
     void Start()
     {
-        toTrack = player[PlayerPrefs.GetInt("PlayerSprite")];
+        toTrack = players.transform.GetChild(PlayerPrefs.GetInt("PlayerSprite")).gameObject;
     }
 
     void Update()

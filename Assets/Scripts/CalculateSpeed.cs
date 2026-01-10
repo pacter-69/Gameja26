@@ -45,7 +45,6 @@ public class CalculateSpeed : MonoBehaviour
         if (speed >= 200)
         {
             AnimeSpeed.SetActive(true);
-            Debug.Log("mecago");
         }
         else
         {

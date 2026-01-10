@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 683bae835e7a14d4e99c95aa906903cb
+guid: e3ce64e7372549941ab418e0f67463d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2274651911085688991
-    second: Fuego2_0
-  - first:
-      213: -2824141856510359465
-    second: Fuego2_1
+      213: -2027187668876677429
+    second: WhatsApp_icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fuego2_0
+      name: WhatsApp_icon_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 12
-        width: 78
-        height: 90
+        x: 17
+        y: 18
+        width: 629
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 167f2147320de60e0800000000000000
-      internalID: -2274651911085688991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fuego2_1
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 89
-        width: 15
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7584367c1f1aec8d0800000000000000
-      internalID: -2824141856510359465
+      spriteID: bcead8f3e8bfdd3e0800000000000000
+      internalID: -2027187668876677429
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fuego2_0: -2274651911085688991
-      Fuego2_1: -2824141856510359465
+      WhatsApp_icon_0: -2027187668876677429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

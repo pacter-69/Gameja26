@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: ab6ac1c21bd0b9d459eef597c55ac82d
+guid: 889225cb6b2194a43be30151f11f9e43
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5176285283468804078
-    second: Fuego4_0
-  - first:
-      213: -34204242859977215
-    second: Fuego4_1
-  - first:
-      213: 6798961286537895712
-    second: Fuego4_2
-  - first:
-      213: -8406473502781449441
-    second: Fuego4_3
-  - first:
-      213: 5013825247894614305
-    second: Fuego4_4
+      213: -3674003583435284614
+    second: bISICLETA_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fuego4_0
+      name: bISICLETA_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 100
-        width: 6
-        height: 12
+        x: 71
+        y: 77
+        width: 57
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,96 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21082c6b5f32a28b0800000000000000
-      internalID: -5176285283468804078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fuego4_1
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 12
-        width: 67
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 106158e1c6b768ff0800000000000000
-      internalID: -34204242859977215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fuego4_2
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 89
-        width: 10
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02f59b58443ca5e50800000000000000
-      internalID: 6798961286537895712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fuego4_3
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 88
-        width: 20
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1b5afc73e4365b80800000000000000
-      internalID: -8406473502781449441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fuego4_4
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 98
-        width: 6
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 121b4a2af7fa49540800000000000000
-      internalID: 5013825247894614305
+      spriteID: a7fd3d1e431530dc0800000000000000
+      internalID: -3674003583435284614
       vertices: []
       indices: 
       edges: []
@@ -235,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fuego4_0: -5176285283468804078
-      Fuego4_1: -34204242859977215
-      Fuego4_2: 6798961286537895712
-      Fuego4_3: -8406473502781449441
-      Fuego4_4: 5013825247894614305
+      bISICLETA_0: -3674003583435284614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

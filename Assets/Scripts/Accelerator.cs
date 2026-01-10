@@ -5,7 +5,7 @@ public class Accelerator : MonoBehaviour
 {
     public float acceleratorMultiplicator;
     public int acceleratorValue;
-    
+    public Animator acelerar;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Car"))
@@ -19,6 +19,7 @@ public class Accelerator : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            acelerar.SetBool("Accelerar", true);
             other.gameObject.GetComponent<PlayerMovement>().speed += acceleratorValue * Time.deltaTime;
         }
     }

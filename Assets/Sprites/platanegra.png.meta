@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 7f01a9f764f65004e8964f128e82fb13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9008710948862416186
+    second: platanegra_0
+  - first:
+      213: 5524855300648641204
+    second: platanegra_1
+  - first:
+      213: 5190034159199624111
+    second: platanegra_2
+  - first:
+      213: 6645239188881054809
+    second: platanegra_3
+  - first:
+      213: 8933504471639424544
+    second: platanegra_4
+  - first:
+      213: 3924169592940867164
+    second: platanegra_5
+  - first:
+      213: -6174999085579608063
+    second: platanegra_6
+  - first:
+      213: -3664584189163307410
+    second: platanegra_7
+  - first:
+      213: 2693021971049562016
+    second: platanegra_8
+  - first:
+      213: 711619294048062953
+    second: platanegra_9
+  - first:
+      213: -8318038455439798747
+    second: platanegra_10
+  - first:
+      213: -8699149987199160721
+    second: platanegra_11
+  - first:
+      213: -2606825728546560109
+    second: platanegra_12
+  - first:
+      213: 7677373528600879940
+    second: platanegra_13
+  - first:
+      213: -7779315654247877572
+    second: platanegra_14
+  - first:
+      213: -5408297117088066691
+    second: platanegra_15
+  - first:
+      213: 6002570597740510923
+    second: platanegra_16
+  - first:
+      213: -3424160548223010125
+    second: platanegra_17
+  - first:
+      213: 4548914500091351350
+    second: platanegra_18
+  - first:
+      213: 6007539678495965576
+    second: platanegra_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: platanegra_0
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1980
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35dd17b0ee550d70800000000000000
+      internalID: 9008710948862416186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1085
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2a89ebf9a3cac40800000000000000
+      internalID: 5524855300648641204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 69
+        width: 1864
+        height: 1910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab9c3fd194b60840800000000000000
+      internalID: 5190034159199624111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_3
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1085
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c92c495d1a83c50800000000000000
+      internalID: 6645239188881054809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 990
+        width: 6
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e7e673cfe2afb70800000000000000
+      internalID: 8933504471639424544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_5
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 990
+        width: 6
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e21a12473757630800000000000000
+      internalID: 3924169592940867164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_6
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 759
+        width: 21
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1006aa75c0ffd4aa0800000000000000
+      internalID: -6174999085579608063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_7
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 745
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e78638818c42dc0800000000000000
+      internalID: -3664584189163307410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_8
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 745
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af3bb4e6398f5520800000000000000
+      internalID: 2693021971049562016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_9
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 759
+        width: 21
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed8c054afd20e900800000000000000
+      internalID: 711619294048062953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 732
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ec87b7814609c80800000000000000
+      internalID: -8318038455439798747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 719
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e662d3d29664780800000000000000
+      internalID: -8699149987199160721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_12
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 719
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39722aabfc1b2dbd0800000000000000
+      internalID: -2606825728546560109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_13
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 732
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4432e3c3c828b8a60800000000000000
+      internalID: 7677373528600879940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_14
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 701
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c347be801a15a0490800000000000000
+      internalID: -7779315654247877572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 683
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7352382d6ed1f4b0800000000000000
+      internalID: -5408297117088066691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_16
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 683
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcef689d72a6d4350800000000000000
+      internalID: 6002570597740510923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_17
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 701
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bab2459f10fa70d0800000000000000
+      internalID: -3424160548223010125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 666
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631919bf2adf02f30800000000000000
+      internalID: 4548914500091351350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platanegra_19
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 666
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88101de12811f5350800000000000000
+      internalID: 6007539678495965576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      platanegra_0: 9008710948862416186
+      platanegra_1: 5524855300648641204
+      platanegra_10: -8318038455439798747
+      platanegra_11: -8699149987199160721
+      platanegra_12: -2606825728546560109
+      platanegra_13: 7677373528600879940
+      platanegra_14: -7779315654247877572
+      platanegra_15: -5408297117088066691
+      platanegra_16: 6002570597740510923
+      platanegra_17: -3424160548223010125
+      platanegra_18: 4548914500091351350
+      platanegra_19: 6007539678495965576
+      platanegra_2: 5190034159199624111
+      platanegra_3: 6645239188881054809
+      platanegra_4: 8933504471639424544
+      platanegra_5: 3924169592940867164
+      platanegra_6: -6174999085579608063
+      platanegra_7: -3664584189163307410
+      platanegra_8: 2693021971049562016
+      platanegra_9: 711619294048062953
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

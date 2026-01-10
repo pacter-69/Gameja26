@@ -9,7 +9,7 @@ public class SpriteManager : MonoBehaviour
     
     void Start()
     {
-        cars[0] = (playerCars.transform.GetChild(PlayerPrefs.GetInt("PlayerSprite")).gameObject);
+        //cars[0] = (playerCars.transform.GetChild(PlayerPrefs.GetInt("PlayerSprite")).gameObject);
         sprites.RemoveAt(PlayerPrefs.GetInt("PlayerSprite"));
         for (int i = 0; i < sprites.Count; i++)
         {

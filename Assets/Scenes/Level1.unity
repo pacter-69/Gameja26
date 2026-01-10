@@ -7723,6 +7723,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 205913302117802400, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1875801735638301503, guid: e90e9e7760013124299aaed86a04b3e7, type: 3}
     - target: {fileID: 575941349166434036, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
       propertyPath: upAction
       value: 
@@ -7779,6 +7783,22 @@ PrefabInstance:
       propertyPath: agujaVelocimetro
       value: 
       objectReference: {fileID: 332898767}
+    - target: {fileID: 3025075547618217195, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 962974795}
+    - target: {fileID: 3025075547618217195, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: speedText
+      value: 
+      objectReference: {fileID: 117137650}
+    - target: {fileID: 3025075547618217195, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: AnimeSpeed
+      value: 
+      objectReference: {fileID: 1054082159}
+    - target: {fileID: 3025075547618217195, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: agujaVelocimetro
+      value: 
+      objectReference: {fileID: 332898767}
     - target: {fileID: 5925210088679199194, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
       propertyPath: upAction
       value: 
@@ -7795,13 +7815,29 @@ PrefabInstance:
       propertyPath: rightAction
       value: 
       objectReference: {fileID: 117661805}
+    - target: {fileID: 6814912247982523800, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: upAction
+      value: 
+      objectReference: {fileID: 804386407}
+    - target: {fileID: 6814912247982523800, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: leftAction
+      value: 
+      objectReference: {fileID: 632080577}
+    - target: {fileID: 6814912247982523800, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: boostAction
+      value: 
+      objectReference: {fileID: 834199705}
+    - target: {fileID: 6814912247982523800, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: rightAction
+      value: 
+      objectReference: {fileID: 117661805}
+    - target: {fileID: 6814912247982523800, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 962974797}
     - target: {fileID: 6932450181340036393, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
       propertyPath: m_Name
       value: playerCars
-      objectReference: {fileID: 0}
-    - target: {fileID: 6932450181340036393, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7098865100806751744, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
       propertyPath: upAction
@@ -7881,6 +7917,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8269245412116712249, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887045947654085685, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -25708,6 +25748,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &962974795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2465835394311937881, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+  m_PrefabInstance: {fileID: 259373848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &962974797 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 338267466618265822, guid: 832145ba7aa739a458e110ce0067d835, type: 3}
+  m_PrefabInstance: {fileID: 259373848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &964423656
 GameObject:
   m_ObjectHideFlags: 0
@@ -131877,8 +131927,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5470958018454605479, guid: 641e7d1ad38e2af4d997d87e5218fe09, type: 3}
+      propertyPath: playerCars
+      value: 
+      objectReference: {fileID: 1672476491}
+    - target: {fileID: 5470958018454605479, guid: 641e7d1ad38e2af4d997d87e5218fe09, type: 3}
       propertyPath: cars.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5470958018454605479, guid: 641e7d1ad38e2af4d997d87e5218fe09, type: 3}
       propertyPath: 'cars.Array.data[0]'
@@ -131895,7 +131949,7 @@ PrefabInstance:
     - target: {fileID: 5470958018454605479, guid: 641e7d1ad38e2af4d997d87e5218fe09, type: 3}
       propertyPath: 'cars.Array.data[3]'
       value: 
-      objectReference: {fileID: 1581755099}
+      objectReference: {fileID: 970837790}
     - target: {fileID: 5470958018454605479, guid: 641e7d1ad38e2af4d997d87e5218fe09, type: 3}
       propertyPath: 'cars.Array.data[4]'
       value: 
